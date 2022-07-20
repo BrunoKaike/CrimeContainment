@@ -1,0 +1,103 @@
+{{>partials/header}}
+
+<div class="container">
+  <!-- Content here -->
+    <div class="row">
+        <div class="col-sm">
+        <h1>seja bem vindo {{user.id}}</h1>
+        </div>
+        <div class="col-sm">
+            <video width="1080" height="720" controls autoplay muted>
+                <source src="video/demonstration.mp4" type="video/mp4">
+            </video    deo>
+        </div>
+        <div class="col-sm">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teste"></button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teste2"></button>
+        </div>
+
+  </div>
+
+    
+
+    
+</div>
+   <!-- Modal -->
+        <div class="modal fade" id="teste" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sujeito de alta periculosidade encontrado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-sm">
+                    <h1>suzane von richthofen</h1>
+                    <img src="images/suzane-von.jpg" alt="Avatar" class="avatar">
+                    </div>
+                    
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" id="mybutton" onclick="alertar()">Acionar Polícia</button>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="teste2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sujeito de alta periculosidade encontrado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-sm">
+                    <h1>Fernandinho Beira-Mar</h1>
+                    <img src="images/fernandinho.jpeg" alt="Avatar" class="avatar">
+                    </div>
+                    
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" id="mybutton" onclick="alertar()">Acionar Polícia</button>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+{{>partials/footer}}
+
+
+<script>
+
+function myFunction(){
+    let button = document.getElementsByClassName("btn btn-primary")[0];
+    button.click();
+
+//    let button2 = document.getElementById("mybutton");
+
+    //button2.modal('hide');
+}function myFunction2(){
+    let button2 = document.getElementsByClassName("btn btn-primary")[1];
+    button2.click();
+
+//    let button2 = document.getElementById("mybutton");
+
+    //button2.modal('hide');
+}
+
+function alertar(){
+    alert("policia alertada");
+}
+
+setTimeout(myFunction,10000);
+setTimeout(myFunction2,30000);
+ 
+</script>
