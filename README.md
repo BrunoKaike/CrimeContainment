@@ -4,13 +4,33 @@ Mini protótipo de um sistema de controle de câmeras, identificação de suspei
 
 Arquivos do módulo inicial de Node + Typescript, da estrutura MVC aplicada.
 
-### Pode colocar qualquer id e senha para fazer o login
+To clone this repository:
+
+```
+$ git clone https://github.com/BrunoKaike/CrimeContainment.git
+$ cd CrimeContainment
+```
+
+### Pré-requisitos:
+- Node.js
+- Git
 
 ### Pré-requisitos globais:
-`npm i -g nodemon typescript ts-node`
+```
+npm i -g nodemon typescript ts-node
+```
 
-### Instalação
-`npm install`
+### Instalação das packpages do Node
+```
+npm install
+```
 
-### Para rodar o projeto
-`npm run start-dev`
+### Inicializando o projeto
+```
+npm run start-dev
+```
+
+# Notas
+
+- Pode inserir qualquer id e senha para fazer o login
+- O programa será inicializado no http://localhost:2000
