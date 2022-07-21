@@ -4,7 +4,7 @@ Mini protótipo de um sistema de controle de câmeras, identificação de suspei
 
 Arquivos do módulo inicial de Node + Typescript, da estrutura MVC aplicada.
 
-To clone this repository:
+Para clonar este repositório:
 
 ```
 $ git clone https://github.com/BrunoKaike/CrimeContainment.git
